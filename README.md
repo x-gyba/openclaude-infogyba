@@ -436,4 +436,13 @@ Cada script é autossuficiente: gera internamente (via heredoc) tudo que
 precisa — `control`/`postinst` no .deb, `.spec` no .rpm, manifesto/`.desktop`/
 wrapper no flatpak — sem depender de arquivos soltos ao lado.
 
+#screenshots
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/a561ed4a-6def-49ef-a1a0-0cbf8faa0e6f" />
+<img width="892" height="300" alt="image" src="https://github.com/user-attachments/assets/028f3478-8f29-4e9c-a903-9a6a564f7ad1" />
+<img width="685" height="453" alt="image" src="https://github.com/user-attachments/assets/c2de508c-3611-4d4e-8476-33aca558ae91" />
+
+
 **Autor:** Infogyba Soluções em TI <infogyba@gmail.com>
+ #instalacao yaml:
+ mkdir -p ~/.continue
+ depois cole o conteudo do YAML em ~/.continue/config.yaml
