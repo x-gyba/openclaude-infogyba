@@ -414,6 +414,7 @@ wrapper no flatpak — sem depender de arquivos soltos ao lado.
 <img width="892" height="300" alt="image" src="https://github.com/user-attachments/assets/028f3478-8f29-4e9c-a903-9a6a564f7ad1" />
 <img width="685" height="453" alt="image" src="https://github.com/user-attachments/assets/c2de508c-3611-4d4e-8476-33aca558ae91" />
 <br>Fedora 44 Kinoite <br>
+<br>
 <img width="1115" height="690" alt="image" src="https://github.com/user-attachments/assets/d3082032-9735-4c72-9fa0-167a82d43b01" />
 
 
