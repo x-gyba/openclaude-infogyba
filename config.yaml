@@ -1,0 +1,31 @@
+name: OpenClaude Local Assistant
+version: 1.0.0
+schema: v1
+
+models:
+  - name: OpenClaude - Qwen2.5-Coder (Local)
+    provider: openai
+    model: qwen2.5-coder-0.5b-instruct
+    apiBase: http://127.0.0.1:11434/v1
+    apiKey: not-needed
+    roles:
+      - chat
+      - edit
+      - apply
+    defaultCompletionOptions:
+      contextLength: 81192 #ou 16384
+
+  - name: OpenClaude Autocomplete
+    provider: openai
+    model: qwen2.5-coder-0.5b-instruct
+    apiBase: http://127.0.0.1:11434/v1
+    apiKey: not-needed
+    roles:
+      - autocomplete
+    defaultCompletionOptions:
+      contextLength: 4096
+    requestOptions:
+    extraBody:
+    options:
+    num_ctx:4096
+
