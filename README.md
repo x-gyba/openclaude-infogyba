@@ -180,9 +180,9 @@ curl http://127.0.0.1:11434/v1/models
    > chave do `settings.json`.
 
 4. Apague o conteúdo padrão yaml  e cole o conteudo do arquivo YAML em :
-<br>
 sudo nano ~/.continue/config.yaml
 <br>
+
 5. Salve (`Ctrl+S`). O Continue recarrega sozinho — não precisa reiniciar
    o VSCode.
 6. No seletor de modelo do chat, escolha **"OpenClaude - Qwen2.5-Coder
