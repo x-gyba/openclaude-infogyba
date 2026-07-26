@@ -179,9 +179,10 @@ curl http://127.0.0.1:11434/v1/models
    > colar a config do Continue ali não funciona, o Continue nunca lê essa
    > chave do `settings.json`.
 
-4. Apague o conteúdo padrão e cole:
-
-```yaml
+4. Apague o conteúdo padrão yaml  e cole em :
+<br>
+sudo nano ~/.continue/config.yaml
+<br>
 name: OpenClaude Local Assistant
 version: 1.0.0
 schema: v1
@@ -197,7 +198,7 @@ models:
       - edit
       - apply
     defaultCompletionOptions:
-      contextLength: 1024
+      contextLength: 81192 #ou 16384
 
   - name: OpenClaude Autocomplete
     provider: openai
@@ -207,9 +208,12 @@ models:
     roles:
       - autocomplete
     defaultCompletionOptions:
-      contextLength: 1024
-```
-
+      contextLength: 4096
+    requestOptions:
+    extraBody:
+    options:
+    num_ctx:4096
+<br>
 5. Salve (`Ctrl+S`). O Continue recarrega sozinho — não precisa reiniciar
    o VSCode.
 6. No seletor de modelo do chat, escolha **"OpenClaude - Qwen2.5-Coder
@@ -443,6 +447,5 @@ wrapper no flatpak — sem depender de arquivos soltos ao lado.
 
 
 **Autor:** Infogyba Soluções em TI <infogyba@gmail.com>
- #instalacao yaml:
- mkdir -p ~/.continue
- depois cole o conteudo do YAML em ~/.continue/config.yaml
+<br>
+ 
